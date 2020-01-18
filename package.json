@@ -1,0 +1,24 @@
+{
+    "name": "salesforce-migration-snippets",
+    "displayName": "Salesforce Migration Snippets",
+    "description": "Code snippets for building the package for deploy and retrieve metadata",
+    "version": "0.0.1",
+    "publisher": "Willyan Marques",
+    "icon": "icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/willyanmarques/salesforce-migration-snippets"
+    },
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [{
+            "language": "xml",
+            "path": "./snippets/xml.json"
+        }]
+    }
+}

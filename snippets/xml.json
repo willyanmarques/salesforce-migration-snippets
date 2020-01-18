@@ -1,0 +1,265 @@
+{
+    "package": {
+        "prefix": "sms-package",
+        "body": [
+            "<Package xmlns=\"http://soap.sforce.com/2006/04/metadata\">",
+            "",
+            "   ${1}",
+            "",
+            "   <version>46.0</version>",
+            "</Package>"
+        ],
+        "description": "create package struture"
+    },
+    "apex-class": {
+        "prefix": "sms-apex-class",
+        "body": [
+            "<types>",
+            "   <members>${1:className}</members>",
+            "   <name>ApexClass</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "aura-definition-bundle": {
+        "prefix": "sms-aura",
+        "body": [
+            "<types>",
+            "   <members>${1:auraName}</members>",
+            "   <name>AuraDefinitionBundle</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "custom-object": {
+        "prefix": "sms-custom-object",
+        "body": [
+            "<types>",
+            "   <members>${1:objectName}__c</members>",
+            "   <name>CustomObject</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "metadata-object": {
+        "prefix": "sms-metadata-object",
+        "body": [
+            "<types>",
+            "   <members>${1:metadataObjectName}__mdt</members>",
+            "   <name>CustomObject</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "metadata-record": {
+        "prefix": "sms-metadata-record",
+        "body": [
+            "<types>",
+            "   <members>${1:metadataObjectName}.${2:metadataRecordName}</members>",
+            "   <name>CustomMetadata</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "queue": {
+        "prefix": "sms-queue",
+        "body": [
+            "<types>",
+            "   <members>${1:queueName}</members>",
+            "   <name>Queue</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "workflow": {
+        "prefix": "sms-workflow",
+        "body": [
+            "<types>",
+            "   <members>${1:objectAPIName}</members>",
+            "   <name>Workflow</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "workflow-rule": {
+        "prefix": "sms-workflow-rule",
+        "body": [
+            "<types>",
+            "   <members>${1:objectAPIName}.${2:worflowRuleName}</members>",
+            "   <name>WorkflowRule</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "flow": {
+        "prefix": "sms-flow",
+        "body": [
+            "<types>",
+            "   <members>${1:flowName}</members>",
+            "   <name>Flow</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "layout": {
+        "prefix": "sms-flow",
+        "body": [
+            "<types>",
+            "   <members>${1:objectName}-${2:layoutName}</members>",
+            "   <name>Layout</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "quick-action": {
+        "prefix": "sms-quick-action",
+        "body": [
+            "<types>",
+            "   <members>${1:objectName}.${2:quickActionName}</members>",
+            "   <name>QuickAction</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "flexi-page": {
+        "prefix": "sms-flexi-page",
+        "body": [
+            "<types>",
+            "   <members>${1:flexiPageName}</members>",
+            "   <name>FlexiPage</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "apex-page": {
+        "prefix": "sms-apex-page",
+        "body": [
+            "<types>",
+            "   <members>${1:apexPageName}</members>",
+            "   <name>ApexPage</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "apex-test-class": {
+        "prefix": "sms-apex-test-class",
+        "body": [
+            "<types>",
+            "   <members>${1:className}</members>",
+            "   <name>ApexTestClasses</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "content-assets": {
+        "prefix": "sms-apex-test-class",
+        "body": [
+            "<types>",
+            "   <members>${1:contentName}</members>",
+            "   <name>ContentAsset</name>",
+            "</types>"
+        ],
+        "description": "icon this app"
+    },
+    "custom-application": {
+        "prefix": "sms-custom-application",
+        "body": [
+            "<types>",
+            "   <members>${1:applicationName}</members>",
+            "   <name>CustomApplication</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "permission-set": {
+        "prefix": "sms-custom-application",
+        "body": [
+            "<types>",
+            "   <members>${1:permissionSetName}</members>",
+            "   <name>PermissionSet</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "apex-trigger": {
+        "prefix": "sms-trigger",
+        "body": [
+            "<types>",
+            "   <members>${1:triggerName}</members>",
+            "   <name>ApexTrigger</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "assignment-rules": {
+        "prefix": "sms-assignment-rules",
+        "body": [
+            "<types>",
+            "   <members>${1:objectAPIName}</members>",
+            "   <name>AssignmentRules</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "profile": {
+        "prefix": "sms-profile",
+        "body": [
+            "<types>",
+            "   <members>${1:profileName}</members>",
+            "   <name>Profile</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "listView": {
+        "prefix": "sms-listView",
+        "body": [
+            "<types>",
+            "   <members>${1:objectAPIName}.${2:listViewName}</members>",
+            "   <name>ListView</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "email-template": {
+        "prefix": "sms-email-template",
+        "body": [
+            "<types>",
+            "   <members>${1:templateName}</members>",
+            "   <name>EmailTemplate</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "auto-response-rules": {
+        "prefix": "sms-auto-response-rules",
+        "body": [
+            "<types>",
+            "   <members>${1:objectAPIName}</members>",
+            "   <name>AutoResponseRules</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "record-type": {
+        "prefix": "sms-record-type",
+        "body": [
+            "<types>",
+            "   <members>${1:objectAPIName}.${2:recordTypeName}</members>",
+            "   <name>RecordType</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "custom-field": {
+        "prefix": "sms-custom-field",
+        "body": [
+            "<types>",
+            "   <members>${1:objectAPIName}.${2:fieldAPIName}</members>",
+            "   <name>CustomField</name>",
+            "</types>"
+        ],
+        "description": ""
+    }
+
+}
