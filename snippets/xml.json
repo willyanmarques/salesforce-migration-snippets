@@ -15,7 +15,7 @@
         "prefix": "sms-apex-class",
         "body": [
             "<types>",
-            "   <members>${1:className}</members>",
+            "   <members>${1:class-APIName}</members>",
             "   <name>ApexClass</name>",
             "</types>"
         ],
@@ -35,7 +35,7 @@
         "prefix": "sms-custom-object",
         "body": [
             "<types>",
-            "   <members>${1:objectName}__c</members>",
+            "   <members>${1:object-APIName}</members>",
             "   <name>CustomObject</name>",
             "</types>"
         ],
@@ -75,7 +75,7 @@
         "prefix": "sms-workflow",
         "body": [
             "<types>",
-            "   <members>${1:objectAPIName}</members>",
+            "   <members>${1:object-APIName}</members>",
             "   <name>Workflow</name>",
             "</types>"
         ],
@@ -85,7 +85,7 @@
         "prefix": "sms-workflow-rule",
         "body": [
             "<types>",
-            "   <members>${1:objectAPIName}.${2:worflowRuleName}</members>",
+            "   <members>${1:object-APIName}.${2:worflowRuleName}</members>",
             "   <name>WorkflowRule</name>",
             "</types>"
         ],
@@ -95,7 +95,7 @@
         "prefix": "sms-flow",
         "body": [
             "<types>",
-            "   <members>${1:flowName}</members>",
+            "   <members>${1:flow-APIName}</members>",
             "   <name>Flow</name>",
             "</types>"
         ],
@@ -105,7 +105,7 @@
         "prefix": "sms-flow",
         "body": [
             "<types>",
-            "   <members>${1:objectName}-${2:layoutName}</members>",
+            "   <members>${1:object-APIName}-${2:layout-Name}</members>",
             "   <name>Layout</name>",
             "</types>"
         ],
@@ -135,7 +135,7 @@
         "prefix": "sms-apex-page",
         "body": [
             "<types>",
-            "   <members>${1:apexPageName}</members>",
+            "   <members>${1:apexPage-APIName}</members>",
             "   <name>ApexPage</name>",
             "</types>"
         ],
@@ -145,14 +145,14 @@
         "prefix": "sms-apex-test-class",
         "body": [
             "<types>",
-            "   <members>${1:className}</members>",
+            "   <members>${1:class-APIName}</members>",
             "   <name>ApexTestClasses</name>",
             "</types>"
         ],
-        "description": ""
+        "description": "It's not a official tag."
     },
     "content-assets": {
-        "prefix": "sms-apex-test-class",
+        "prefix": "sms-content-assets",
         "body": [
             "<types>",
             "   <members>${1:contentName}</members>",
@@ -175,7 +175,7 @@
         "prefix": "sms-custom-application",
         "body": [
             "<types>",
-            "   <members>${1:permissionSetName}</members>",
+            "   <members>${1:permissionSet-APIName}</members>",
             "   <name>PermissionSet</name>",
             "</types>"
         ],
@@ -185,7 +185,7 @@
         "prefix": "sms-trigger",
         "body": [
             "<types>",
-            "   <members>${1:triggerName}</members>",
+            "   <members>${1:trigger-APIName}</members>",
             "   <name>ApexTrigger</name>",
             "</types>"
         ],
@@ -205,7 +205,7 @@
         "prefix": "sms-profile",
         "body": [
             "<types>",
-            "   <members>${1:profileName}</members>",
+            "   <members>${1:profile-APIName}</members>",
             "   <name>Profile</name>",
             "</types>"
         ],
@@ -215,7 +215,7 @@
         "prefix": "sms-listView",
         "body": [
             "<types>",
-            "   <members>${1:objectAPIName}.${2:listViewName}</members>",
+            "   <members>${1:object-APIName}.${2:listView-APIName}</members>",
             "   <name>ListView</name>",
             "</types>"
         ],
@@ -225,7 +225,7 @@
         "prefix": "sms-email-template",
         "body": [
             "<types>",
-            "   <members>${1:templateName}</members>",
+            "   <members>${1:folder}/${2:template-APIName}</members>",
             "   <name>EmailTemplate</name>",
             "</types>"
         ],
@@ -245,7 +245,7 @@
         "prefix": "sms-record-type",
         "body": [
             "<types>",
-            "   <members>${1:objectAPIName}.${2:recordTypeName}</members>",
+            "   <members>${1:object-APIName}.${2:recordType-APIName}</members>",
             "   <name>RecordType</name>",
             "</types>"
         ],
@@ -255,11 +255,61 @@
         "prefix": "sms-custom-field",
         "body": [
             "<types>",
-            "   <members>${1:objectAPIName}.${2:fieldAPIName}</members>",
+            "   <members>${1:object-APIName}.${2:field-APIName}</members>",
             "   <name>CustomField</name>",
             "</types>"
         ],
         "description": ""
+    },
+    "Weblink": {
+        "prefix": "sms-weblink",
+        "body": [
+            "<types>",
+            "   <members>${1:object-APIName}.${2:linkOrButton-APIName}</members>",
+            "   <name>WebLink</name>",
+            "</types>"
+        ],
+        "description":"this tag is used to deploy links or buttons"
+    },
+    "apex-component": {
+        "prefix": "sms-apex-component",
+        "body": [
+            "<types>",
+            "   <members>${1:component-APIName}</members>",
+            "   <name>ApexComponent</name>",
+            "</types>"
+        ],
+        "description":""
+    },
+    "static-resource": {
+        "prefix": "sms-static-resource",
+        "body": [
+            "<types>",
+            "   <members>${1:StaticResource-APIName}</members>",
+            "   <name>StaticResource</name>",
+            "</types>"
+        ],
+        "description":""
+    },
+    "entitlement-process": {
+        "prefix": "sms-entitlement-process",
+        "body": [
+            "<types>",
+            "   <members>${1:Entitlement-Name}</members>",
+            "   <name>EntitlementProcess</name>",
+            "</types>"
+        ],
+        "description":""
+    },
+    "remote-site-setting": {
+        "prefix": "sms-remote-site-setting",
+        "body": [
+            "<types>",
+            "   <members>${1:SiteSettings-APIName}</members>",
+            "   <name>EntitlementRemoteSiteSettingProcess</name>",
+            "</types>"
+        ],
+        "description":""
     }
 
 }
