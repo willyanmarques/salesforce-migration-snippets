@@ -102,7 +102,7 @@
         "description": ""
     },
     "layout": {
-        "prefix": "sms-flow",
+        "prefix": "sms-layout",
         "body": [
             "<types>",
             "   <members>${1:object-APIName}-${2:layout-Name}</members>",
