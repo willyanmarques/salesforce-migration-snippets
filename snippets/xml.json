@@ -65,7 +65,7 @@
         "prefix": "sms-queue",
         "body": [
             "<types>",
-            "   <members>${1:queueName}</members>",
+            "   <members>${1:queue-APIName}</members>",
             "   <name>Queue</name>",
             "</types>"
         ],
@@ -172,7 +172,7 @@
         "description": ""
     },
     "permission-set": {
-        "prefix": "sms-custom-application",
+        "prefix": "sms-permission-set",
         "body": [
             "<types>",
             "   <members>${1:permissionSet-APIName}</members>",
@@ -307,6 +307,97 @@
             "<types>",
             "   <members>${1:SiteSettings-APIName}</members>",
             "   <name>EntitlementRemoteSiteSettingProcess</name>",
+            "</types>"
+        ],
+        "description":""
+    },
+    "custom-label": {
+        "prefix": "sms-custom-label",
+        "body": [
+            "<types>",
+            "   <members>${1:APIName}</members>",
+            "   <name>CustomLabel</name>",
+            "</types>"
+        ],
+        "description":""
+    },
+    "custom-object-translation": {
+        "prefix": "sms-custom-object-translation",
+        "body": [
+            "<types>",
+            "   <members>${1:Object-APIName}-en_US</members>",
+            "   <members>${1:Object-APIName}-pt_BR</members>",
+            "   <name>CustomObjectTranslation</name>",
+            "</types>"
+        ],
+        "description":""
+    },
+    "translations":{
+        "prefix": "sms-translations",
+        "body": [
+            "<types>",
+            "   <members>en_US</members>",
+            "   <members>pt_BR</members>",
+            "   <name>Translations</name>",
+            "</types>"
+        ]
+    },
+    "workflow-field-update": {
+        "prefix": "sms-workflow-field-update",
+        "body": [
+            "<types>",
+            "   <members>${1:Object-APIName}.${2:APIName}</members>",
+            "   <name>WorkflowFieldUpdate</name>",
+            "</types>"
+        ],
+        "description":""
+    },
+    "path-assistant": {
+        "prefix": "sms-path-assistant",
+        "body": [
+            "<types>",
+            "   <members>${1:APIName}</members>",
+            "   <name>PathAssistant</name>",
+            "</types>"
+        ],
+        "description":""
+    },
+    "group": {
+        "prefix": "sms-group",
+        "body": [
+            "<types>",
+            "   <members>${1:APIName}</members>",
+            "   <name>Group</name>",
+            "</types>"
+        ],
+        "description":""
+    },
+    "global-value-set": {
+        "prefix": "sms-global-value-set",
+        "body": [
+            "<types>",
+            "   <members>${1:APIName}</members>",
+            "   <name>GlobalValueSet</name>",
+            "</types>"
+        ],
+        "description":""
+    },
+    "custom-tab": {
+        "prefix": "sms-custom-tab",
+        "body": [
+            "<types>",
+            "   <members>${1:APIName}</members>",
+            "   <name>CustomTab</name>",
+            "</types>"
+        ],
+        "description":""
+    },
+    "compact-layout": {
+        "prefix": "sms-compact-layout",
+        "body": [
+            "<types>",
+            "   <members>${1:Object-APIName}.${2:APIName}</members>",
+            "   <name>CompactLayout</name>",
             "</types>"
         ],
         "description":""
