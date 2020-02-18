@@ -1,4 +1,4 @@
-# salesforce-deploy-snippets README
+# salesforce-migration-snippets README
 
 This is the README for your extension "salesforce-deploy-snippets". After writing up a brief description, we recommend including the following sections.
 

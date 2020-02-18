@@ -260,6 +260,26 @@
             "</types>"
         ],
         "description": ""
+    },
+    "static-resource": {
+        "prefix": "sms-static-resource",
+        "body": [
+            "<types>",
+            "   <members>${1:resourceName}</members>",
+            "   <name>StaticResource</name>",
+            "</types>"
+        ],
+        "description": ""
+    },
+    "custom-labels": {
+        "prefix": "sms-custom-labels",
+        "body": [
+            "<types>",
+            "   <members>*</members>",
+            "   <name>CustomLabels</name>",
+            "</types>"
+        ],
+        "description": ""
     }
 
 }
